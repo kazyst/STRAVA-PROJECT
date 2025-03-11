@@ -1,3 +1,4 @@
+from datetime import date
 def all_activities_to_list(activities):
     activity_list = list(activities)  
     final_list=[]
@@ -44,3 +45,9 @@ def all_activities_to_list(activities):
         }
         final_list.append(activities_list)
     return final_list
+
+def m_to_km(metres):
+    return round(metres/1000,2)
+
+def date_format(date_input):
+    return date.isoformat(date_input)
